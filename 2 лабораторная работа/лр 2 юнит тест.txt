@@ -1,0 +1,88 @@
+#include "pch.h"
+#include "CppUnitTest.h"
+#include "..\UnitTestLab2\pch.h"
+
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+
+namespace UnitTestLab2
+{
+	TEST_CLASS(UnitTestLab2)
+	{
+	public:
+		
+		TEST_METHOD(Method_BinarySearch)
+		{
+			const int n = 6;
+			int mas[6] = { 1,2,5,18,20,91 };
+			int find = 5;
+			int check = 0;
+			check = BinarySearch(mas, find, n);
+			Assert::IsTrue(check == find);
+			find = 1;
+			check = BinarySearch(mas, find,n);
+			Assert::IsTrue(check == find);
+			find = 91;
+			check = BinarySearch(mas, find,n);
+			Assert::IsTrue(check == find);
+
+		}
+		TEST_METHOD(Method_QuickSearch)
+		{
+			const int n = 6;
+			int mas[n] = { 5,7,0,9,21,2 };
+			QuickSearch(mas, n);
+			bool answer;
+			for (int i = 0; i < 6; i++)
+			{
+				if (mas[i] < mas[i + 1])
+					answer = true;
+				else answer = false;
+			}
+			Assert::IsTrue(answer == true);
+		}
+		TEST_METHOD(Method_InsertionSort)
+		{
+			const int n = 6;
+			int mas[n] = { 5,7,0,9,21,2 };
+			InsertionSort(mas, n);
+			bool answer;
+			for (int i = 0; i < 6; i++)
+			{
+				if (mas[i] < mas[i + 1])
+					answer = true;
+				else answer = false;
+			}
+			Assert::IsTrue(answer == true);
+		}
+		TEST_METHOD(Method_BogoSort)
+		{
+			const int n = 6;
+			int mas[n] = { 5,7,0,9,21,2 };
+			BogoSort(mas, n);
+			bool answer;
+			for (int i = 0; i < 6; i++)
+			{
+				if (mas[i] < mas[i + 1])
+					answer = true;
+				else answer = false;
+			}
+			Assert::IsTrue(answer == true);
+		}
+		TEST_METHOD(Method_CountingSort)
+		{
+			const int n = 6;
+			char mas[n] = { 'c','d','e','v','g','v'};
+			CountingSort(mas, n);
+			bool answer;
+			for (int i = 0; i < 6; i++)
+			{
+				if (mas[i] < mas[i + 1])
+					answer = true;
+				else answer = false;
+			}
+			Assert::IsTrue(answer == true);
+		}
+
+	};
+}

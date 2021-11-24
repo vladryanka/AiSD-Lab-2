@@ -1,0 +1,4 @@
+﻿  UnitTestLab2.cpp
+C:\Users\Я\Desktop\вуз\3 семестр\АиСД\2 лабораторная работа\mas.h(69,15): warning C4834: отмена возвращаемого значения функции с атрибутом "nodiscard"
+C:\Users\Я\Desktop\вуз\3 семестр\АиСД\2 лабораторная работа\mas.h(85,15): warning C4834: отмена возвращаемого значения функции с атрибутом "nodiscard"
+  UnitTestLab2.vcxproj -> C:\Users\Я\Desktop\вуз\3 семестр\АиСД\2 лабораторная работа\Debug\UnitTestLab2.dll

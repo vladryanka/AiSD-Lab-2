@@ -1,0 +1,5 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(1967,5): warning : The referenced project '..\UnitTestLab2\UnitTestLab2.vcxproj' does not exist.
+  2lab.cpp
+C:\Users\Я\Desktop\вуз\3 семестр\АиСД\2 лабораторная работа\2lab.cpp(69,15): warning C4834: отмена возвращаемого значения функции с атрибутом "nodiscard"
+C:\Users\Я\Desktop\вуз\3 семестр\АиСД\2 лабораторная работа\2lab.cpp(85,15): warning C4834: отмена возвращаемого значения функции с атрибутом "nodiscard"
+  2 лабораторная работа.vcxproj -> C:\Users\Я\Desktop\вуз\3 семестр\АиСД\2 лабораторная работа\Debug\2 лабораторная работа.exe
